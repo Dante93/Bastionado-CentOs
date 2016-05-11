@@ -18,12 +18,12 @@ def cramfs_filesys():
 	if (res == False || res2 == False):
 
 		if os.path.exists('/etc/modprobe.d/CIS.conf'):
-			aux = open('/etc/modprobe.d/CIS.conf','w')
+			aux = open('/etc/modprobe.d/CIS.conf','a')
 			aux.write("install cramfs /bin/true \n")
 		
 
 		else:
-			aux = open('/etc/modprobe.d/CIS.conf','a')
+			aux = open('/etc/modprobe.d/CIS.conf','w')
 			aux.write("install cramfs /bin/true \n")
 			aux.close()
 
@@ -42,11 +42,11 @@ def freevcfs_disble():
 
 	if (res == False || res2 == False):
 		if os.path.exists('/etc/modprobe.d/CIS.conf'):
-			aux = open('/etc/modprobe.d/CIS.conf \n','w')
+			aux = open('/etc/modprobe.d/CIS.conf \n','a')
 			aux.write("install freevxfs /bin/true")
 
 		else:
-			aux = open('/etc/modprobe.d/CIS.conf','a')
+			aux = open('/etc/modprobe.d/CIS.conf','w')
 			aux.write("install freevxfs /bin/true \n")
 			aux.close()
 
@@ -65,11 +65,11 @@ def jffs2_disable():
 
 	if (res == False || res2 == False):
 		if os.path.exists('/etc/modprobe.d/CIS.conf'):
-			aux = open('/etc/modprobe.d/CIS.conf \n','w')
+			aux = open('/etc/modprobe.d/CIS.conf \n','a')
 			aux.write("install jffs2 /bin/true")
 
 		else:
-			aux = open('/etc/modprobe.d/CIS.conf','a')
+			aux = open('/etc/modprobe.d/CIS.conf','w')
 			aux.write("install jffs2 /bin/true \n")
 			aux.close()
 
