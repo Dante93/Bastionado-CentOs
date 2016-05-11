@@ -42,8 +42,8 @@ def freevcfs_disble():
 
 	if (res == False || res2 == False):
 		if os.path.exists('/etc/modprobe.d/CIS.conf'):
-			aux = open('/etc/modprobe.d/CIS.conf \n','a')
-			aux.write("install freevxfs /bin/true")
+			aux = open('/etc/modprobe.d/CIS.conf','a')
+			aux.write("install freevxfs /bin/true \n")
 
 		else:
 			aux = open('/etc/modprobe.d/CIS.conf','w')
@@ -65,8 +65,8 @@ def jffs2_disable():
 
 	if (res == False || res2 == False):
 		if os.path.exists('/etc/modprobe.d/CIS.conf'):
-			aux = open('/etc/modprobe.d/CIS.conf \n','a')
-			aux.write("install jffs2 /bin/true")
+			aux = open('/etc/modprobe.d/CIS.conf','a')
+			aux.write("install jffs2 /bin/true \n")
 
 		else:
 			aux = open('/etc/modprobe.d/CIS.conf','w')
@@ -76,6 +76,7 @@ def jffs2_disable():
 	else:
 		return oki
 
+//1.1.1.3
 
 if __name__=='__main__':
 	
