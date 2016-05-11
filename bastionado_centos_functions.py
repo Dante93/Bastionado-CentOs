@@ -4,6 +4,7 @@ res = False
 res2 = False
 oki = "All is OK"
 
+//1.1.1.1
 def cramfs_filesys():
 	
 	retvalue = "".join(os.popen("modprobe -n -v cramfs").readlines())
@@ -29,9 +30,7 @@ def cramfs_filesys():
 	else:
 		return oki
 
-
-
-
+//1.1.1.2
 def freevcfs_disble():
 	retvalue = "".join(os.popen("modprobe -n -v freevxfs").readlines())
 	retvalue2 = "".join(os.popen("lsmod | grep freevxfs").readlines())
@@ -54,7 +53,7 @@ def freevcfs_disble():
 	else:
 		return oki
 
-
+//1.1.1.3
 def jffs2_disable():
 	retvalue = "".join(os.popen("modprobe -n -v jffs2").readlines())
 	retvalue2 = "".join(os.popen("lsmod | grep jffs2").readlines())
