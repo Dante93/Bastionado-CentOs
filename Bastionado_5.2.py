@@ -221,8 +221,8 @@ def check_5_2_14(check_list):
 	file.close()
 	return;			
 
+#TODO
 def get_value(regular_expresion, file_to_check):
-
 	file = open(file_to_check, 'r')
 	content = file.read()
 	match = re.search('(?P<Flag>.*) (?P<Value>.*)',content)
