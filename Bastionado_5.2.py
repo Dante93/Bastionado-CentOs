@@ -245,16 +245,18 @@ def check_regex(regular_expression, looked_output, file_to_check):
 	return False
 
 
-#check_5_2_1(check_list)
-check_5_2_2_v2(check_list)
-check_5_2_3_v2(check_list)
-check_5_2_4(check_list)
-check_5_2_5(check_list)
-check_5_2_6(check_list)
-check_5_2_7(check_list)
-check_5_2_8(check_list)
-#get_value("r",test_file)
-print check_list
+if __name__ == "__main__":
+
+	#check_5_2_1(check_list)
+	check_5_2_2_v2(check_list)
+	check_5_2_3_v2(check_list)
+	check_5_2_4(check_list)
+	check_5_2_5(check_list)
+	check_5_2_6(check_list)
+	check_5_2_7(check_list)
+	check_5_2_8(check_list)
+	#get_value("r",test_file)
+	print check_list
 
 
 
